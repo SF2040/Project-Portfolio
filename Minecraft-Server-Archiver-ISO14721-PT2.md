@@ -1,12 +1,25 @@
-Family Repo's 
-[https://github.com/SF2040/minecraft-archive](https://github.com/SF2040/minecraft-server-archive)
+Minecraft Server Archiver
 
-[https://github.com/SF2040/scripts](https://github.com/SF2040/minecraft-archive-AIPUPLOAD)
+**COMPANION REPOSITORIES**
 
-Demonstration
+Report & Documentation
 
-[https://youtu.be/6s74uC5A6zg
-](https://youtu.be/6s74uC5A6zg)
+- Part-1: <https://github.com/SF2040/Project-Portfolio/blob/main/Minecraft-Server-Archiver-PT1.md>
+
+- Part-2: <https://github.com/SF2040/Project-Portfolio/blob/main/Minecraft-Server-Archiver-ISO14721-PT2.md>
+
+Builds & Scripts
+
+- Server-Archiver Python script: <https://github.com/SF2040/minecraft-server-archive>
+
+- ISO-14721 AIP: <https://github.com/SF2040/minecraft-archive-AIPUPLOAD>
+
+Other:
+
+- Live demo: <https://youtu.be/6s74uC5A6zg>
+
+- ISO pub: [CCSDS 650.0-M-3](https://ccsds.org/Pubs/650x0m3.pdf)
+
 
 # Intro
 Part 1 of the project is a bot that joins Minecraft servers, detects player builds and downloads the world. Focusing mainly on ingesting data.
