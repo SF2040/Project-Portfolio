@@ -110,7 +110,7 @@ We use active monitoring, fixity checks, and data migration to ensure long-term 
 - Reverse engineer errors & bugs for optimisation
 
 ## DISCLAIMER
-**NOT AN OFFICIAL MINECRAFT PRODUCT OR SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT
+**NOT AN OFFICIAL MINECRAFT PRODUCT OR SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT**
 
 This project is an independent, non-commercial tool developed solely for personal research, educational purposes, and data preservation.
 
@@ -119,9 +119,9 @@ Where authentication is used, the project requires a legitimate Minecraft accoun
 This project does not distribute copyrighted Microsoft/Mojang source code, game assets, or modified Minecraft client binaries. Any third-party modifications used with the project was obtained and used by the user in accordance with their applicable licences and the Minecraft EULA and Usage Guidelines [2](https://www.minecraft.net/en-us/eula#:~:text=what%20you%20can%20and%20can%E2%80%99t%20do%20with%20Minecraft%20software%20and%20content)
 
 All automated interactions are restricted to publicly accessible servers with whitelisting disabled and valid account authentication (`"cracked": false`), utilizing a legitimate, paid-for Minecraft account in strict accordance with server access requirements. 
-==The absence of an enabled whitelist shows the accessed server(s) are configured by the server operator to accept connections from players globally.== 
+**The absence of an enabled whitelist shows the accessed server(s) are configured by the server operator to accept connections from players globally.**
 
 **Ref:**
-1 Minecraft End User License Agreement: [https://www.minecraft.net/en-us/eula](https://www.minecraft.net/en-us/eula)  
-2 Minecraft Usage Guidelines: [https://www.minecraft.net/en-us/usage-guidelines](https://www.minecraft.net/en-us/usage-guidelines)
-3 Microsoft Services Agreement https://www.microsoft.com/en-au/servicesagreement 
+- 1 Minecraft End User License Agreement: [https://www.minecraft.net/en-us/eula](https://www.minecraft.net/en-us/eula)
+- 2 Minecraft Usage Guidelines: [https://www.minecraft.net/en-us/usage-guidelines](https://www.minecraft.net/en-us/usage-guidelines)
+- 3 Microsoft Services Agreement [https://www.microsoft.com/en-au/servicesagreement](https://www.microsoft.com/en-au/servicesagreement)
