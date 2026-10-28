@@ -1,7 +1,13 @@
-https://github.com/SF2040/minecraft-archive
-https://github.com/SF2040/scripts
+Family Repo's 
+[https://github.com/SF2040/minecraft-archive](https://github.com/SF2040/minecraft-server-archive)
+
+[https://github.com/SF2040/scripts](https://github.com/SF2040/minecraft-archive-AIPUPLOAD)
+
 Demonstration
-https://youtu.be/6s74uC5A6zg
+
+[https://youtu.be/6s74uC5A6zg
+](https://youtu.be/6s74uC5A6zg)
+
 # Intro
 Part 1 of the project is a bot that joins Minecraft servers, detects player builds and downloads the world. Focusing mainly on ingesting data.
 Part 2 takes those downloads and preserves them. Aggregating and archiving the data. It packages each world with the information needed to trust and understand it later, checks that nothing has been damaged, and stores it in a  GitHub repository. It follows the OAIS reference model (ISO 14721). The work is done by two small Python scripts that are run by hand after an archiving session. 
