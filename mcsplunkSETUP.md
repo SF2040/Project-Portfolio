@@ -1,4 +1,4 @@
-[GitHub - sidward35/SplunkMC: Use Splunk to monitor your Minecraft activity](https://github.com/sidward35/SplunkMC)
+
 
 # Setup
 Once splunk is installed,
@@ -6,8 +6,10 @@ Once splunk is installed,
 
 ## Configure MC Spigot & open local server
 1. Spigot. Follow [Installation | SpigotMC - High Performance Minecraft Community](https://www.spigotmc.org/wiki/spigot-installation/) to download a spigot file.
-2. Create a new folder, put the buildtools.jar file inside of it. Compile it. 
-   ![Screenshot](screenshots/splsetup-01.png)
+2. Create a new folder, put the buildtools.jar file inside of it. Compile it.
+
+![Screenshot](screenshots/splsetup-01.png)
+
 3. CD to where the buildtools.jar is located, and run `java -jar BuildTools.jar --rev 1.16.5` This will generate a spigot jar file for minecraft version 1.16.5
 
 4. Move spigot.jar to a new folder.
@@ -21,7 +23,7 @@ Once splunk is installed,
 `ipconfig` on server machine > input IP into minecraft direct connect.
 
 ![Screenshot](screenshots/splsetup-02.png)
-![Screenshot](screenshots/splsetup-03.png)
+
 Our local server is working. We can connect and run administrative commands via the command prompt.
 
 ## SuperPlug Plugin
@@ -70,28 +72,25 @@ We will need to manually add events & the correct arguments to capture & log bef
 Now that we have my configuration setup, we need a world to download and play on. Using a utility mod & playing on a fresh world wont give us enough data. 
 Our scenario, is moderating an already established server.
 
-See [[++PT1 Minecraft Server Archiver With Python]]
+See **[[[++PT1 Minecraft Server Archiver With Python]]](https://github.com/SF2040/Project-Portfolio/blob/main/Minecraft-Server-Archiver-PT1.md)**
 
 We've installed [WorldTools - Minecraft Mod](https://modrinth.com/mod/worldtools?version=1.21.4&loader=fabric) to download our worlds. They get saved directly to our single player world, then can be extracted and used on the spigot server.
 
 ![Screenshot](screenshots/splsetup-10.png)
+
 We use a simple search query to find a small multiplayer server that is active and has been lived on for a while. The service I am using is just a discord hook of [Shodan Search Engine](https://www.shodan.io/) 
-Narrowing our search for 1.16.5, we have 3 servers...
+Narrowing our search for 1.16.5, we have 3 servers.
+
 ![Screenshot](screenshots/splsetup-11.png)
-## DISCLAIMER
-This download was performed on a *public, non-whitelisted Minecraft server*, meaning the server owner has chosen to allow unrestricted player access without authentication or invitation.
-Under the Minecraft EULA, players are legally allowed to *receive and render world data (chunks) sent to their client during normal gameplay*.
-I am *not modifying, redistributing, or selling Mojang’s proprietary game content*. The only data being saved is the same world information already transmitted to my game client during regular play.
-This use is *non-commercial, educational*, and does not violate the EULA’s restrictions on monetization, reverse-engineering, or commercial exploitation.
-https://account.mojang.com/documents/minecraft_eula
-![Screenshot](screenshots/splsetup-12.png)
-![Screenshot](screenshots/splsetup-13.png)
-We've got our server to work with a real player made survival world on 1.16.5. During the download I had to manually open every chest on the world to save its data.
+
+
 ## Finalize
 We need to finalize our `config.yml`
 We can add extra arguments & conditions to the event.
 ![Screenshot](screenshots/splsetup-14.png)
+
 We add our own argument and edit the example config to look for flint & steel usage.
+
 **EXAMPLE CONFIG**
 `PlayerInteractEvent:`
 	  `enabled: true`
@@ -113,6 +112,7 @@ We add our own argument and edit the example config to look for flint & steel us
 	- `'FLINT_AND_STEEL'`
 	`hand-logged:`
 	- `'HAND'`
+
 We edit our config to explicitly detect Flint & steel being used, the example config given was simply create a log if there was a right click on a stone/oak button.
 We also configure BlockPlaceEvent to detect air place.
 `BlockPlaceEvent:`
@@ -121,7 +121,7 @@ We also configure BlockPlaceEvent to detect air place.
     `placedAgainst:`
     `- 'AIR'`
 
-### CONTROL MAPPING
+## CONTROL MAPPING
 [The NIST Cybersecurity Framework (CSF) 2.0](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf)
 - Identify (ID.RA): Organisations must identify their likelihood of encountering a threat and configure controls/logging accordingly. In this case, a survival minecraft server will configure logging to detect survival based cheating/griefing, tnt abuse, flying etc.
   In another example, if the organisation was a minigame server, they would need to configure controls & logging for combat based cheats.
@@ -136,15 +136,24 @@ Now that everything is setup, we can begin a quick playthrough/demonstration wit
 We have personally configured the splunk logs to look for Air Place (not achievable in regular versions of the game) 
 ![Screenshot](screenshots/splsetup-15.png)
 ![Screenshot](screenshots/splsetup-16.png)
+
 Even without changing any configurations, we are still able to detect abnormal activity
 AutoMountain
+
 ![Screenshot](screenshots/splsetup-17.png)
+
 We can see some irregular block placement, somehow the player is placing blocks perfectly diaganal, (Looking at coordinates, the Y & Z axis both go up by one)
+
 ![Screenshot](screenshots/splsetup-18.png)
+
 A vanilla player would give these events
+
 ![Screenshot](screenshots/splsetup-19.png)
+
 Notice the Y axis stays the same twice, that is because the first two blocks are needed so that to go up 1 Y axis there would need to be a block below it to place on.
+
 ![Screenshot](screenshots/splsetup-20.png)
+
 ## Splunk Dashboard Visulisation.
 The biggest concern on a vanilla world is destruction.
 Ive created 2 dashboards to visualise fire spreading & tnt explosions
@@ -164,16 +173,21 @@ Using a simple query with a graph chart would help show events.
 `sourcetype=minecraft_logs "BlockBurnEvent"`
 `| timechart span=1m count as "Blocks Burned"`
 
-
+## DISCLAIMER
+This download was performed on a *public, non-whitelisted Minecraft server*, meaning the server owner has chosen to allow unrestricted player access without authentication or invitation.
+Under the Minecraft EULA, players are legally allowed to *receive and render world data (chunks) sent to their client during normal gameplay*.
+I am *not modifying, redistributing, or selling Mojang’s proprietary game content*. The only data being saved is the same world information already transmitted to my game client during regular play.
+This use is *non-commercial, educational*, and does not violate the EULA’s restrictions on monetization, reverse-engineering, or commercial exploitation.
+https://account.mojang.com/documents/minecraft_eula
 
 
 
 
 -------
- **So far I have demonstrated**
+ **Skills Demonstrated**
  - **Setting up SplunkMC** (Connecting 3rd party applications to a working pipeline)
  - **Installing & configuring Minecraft plugins and files.** (File systems, Java)
- - **Framework Implementation**
+ - **Cybersecurity Framework Implementation (ATT&CK , NIST**
  - **Visualise & correlate Minecraft events into Splunk incident scenarios**
 
 ----------
@@ -181,4 +195,6 @@ Using a simple query with a graph chart would help show events.
 We can now move onto our report on our incidents
 
 
-# [[+Minecraft & Splunk REPORT]] 
+**[# [[+Minecraft & Splunk REPORT]] ](https://github.com/SF2040/Project-Portfolio/blob/main/mcsplunkREPORT.md)**
+
+PLUGIN USED: [GitHub - sidward35/SplunkMC: Use Splunk to monitor your Minecraft activity](https://github.com/sidward35/SplunkMC) 
