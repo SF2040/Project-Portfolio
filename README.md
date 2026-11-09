@@ -35,14 +35,14 @@ Ranked in order of my favourite & complexity
 
 | # | Project | Domain | Key Skills | Link |
 |---|---------|--------|------------|------|
-| 1 | Auto Server Archive (4 parts) |👷🏻 End-To-End Pipeline  | 1. Implementing ISO14721 into a real, automated project     2. Designed an end-to-end automated archiving pipeline for public use | [View](https://github.com/SF2040/Project-Portfolio/blob/main/Minecraft-Server-Archiver-PT1.md) |
-| 2 | Minecraft x Splunk (2 parts) | 💥 Incident Analysis | 1. ATT&CK & NIST Framwork structured report 2. Incident analysis using Splunk | [View](https://github.com/SF2040/Project-Portfolio/blob/main/mcsplunkSETUP.md) |
-| 3 | 97% off flagship AI models (2 parts) | 💻 Infrastructure As Code | 1. System Architecture 2. Cost & Tools optimisation| [View](https://github.com/SF2040/Project-Portfolio/blob/main/AI-Infastructure-PT1.md) |
-| 4 | IOT Crypto NerdMiner | 📱 Internet Of Things Configuration | 1. Configured & deployed IOT device 2. Troubleshooting | [View](https://github.com/SF2040/Project-Portfolio/blob/main/nerdminer.md) |
-| 5 | IOT M5StackC | 🟥 Red Team | 1. Red Team testing with IOT device | [View](https://github.com/SF2040/Project-Portfolio/blob/main/m5stack.md) |
-| 6 | AWS Homelab | ☁️ Cloud Infrastructure | 1. Built & Configured cloud lab environment | [View](https://github.com/SF2040/Project-Portfolio/blob/main/AWS-Homelab.md) |
-| 7 | AWS Secure S3 | ☁️ Cloud Infrastructure | 1. Secured storage in cloud environment | [View](https://github.com/SF2040/Project-Portfolio/blob/main/AWS-secure-bucket.md) |
-| 8 | Open Source Intelligence | 📓 Report | 1. Demonstrated gathering open source information | [View](https://github.com/SF2040/Project-Portfolio/blob/main/OSINT.md) |
+| 1 | Auto Server Archive (4 parts) 17/10/26 |👷🏻 End-To-End Pipeline  | 1. Implementing ISO14721 into a real, automated project     2. Designed an end-to-end automated archiving pipeline for public use | [View](https://github.com/SF2040/Project-Portfolio/blob/main/Minecraft-Server-Archiver-PT1.md) |
+| 2 | Minecraft x Splunk (2 parts) 6/11/25 | 💥 Incident Analysis | 1. ATT&CK & NIST Framwork structured report 2. Incident analysis using Splunk | [View](https://github.com/SF2040/Project-Portfolio/blob/main/mcsplunkSETUP.md) |
+| 3 | 97% off flagship AI models (2 parts) 29/06/26 | 💻 Infrastructure As Code | 1. System Architecture 2. Cost & Tools optimisation| [View](https://github.com/SF2040/Project-Portfolio/blob/main/AI-Infastructure-PT1.md) |
+| 4 | IOT Crypto NerdMiner 15/09/25 | 📱 Internet Of Things Configuration | 1. Configured & deployed IOT device 2. Troubleshooting | [View](https://github.com/SF2040/Project-Portfolio/blob/main/nerdminer.md) |
+| 5 | IOT M5StackC 15/09/25 | 🟥 Red Team | 1. Red Team testing with IOT device | [View](https://github.com/SF2040/Project-Portfolio/blob/main/m5stack.md) |
+| 6 | AWS Homelab 22/06/25 | ☁️ Cloud Infrastructure | 1. Built & Configured cloud lab environment | [View](https://github.com/SF2040/Project-Portfolio/blob/main/AWS-Homelab.md) |
+| 7 | AWS Secure S3 11/10/25 | ☁️ Cloud Infrastructure | 1. Secured storage in cloud environment | [View](https://github.com/SF2040/Project-Portfolio/blob/main/AWS-secure-bucket.md) |
+| 8 | Open Source Intelligence 19/06/25 | 📓 Report | 1. Demonstrated gathering open source information | [View](https://github.com/SF2040/Project-Portfolio/blob/main/OSINT.md) |
 
 <!-- Tip: keep "Domain" to one of: Cloud Security · Detection & Monitoring · OSINT · GRC / Standards · Hardware & IoT -->
 
